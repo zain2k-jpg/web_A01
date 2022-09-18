@@ -1,0 +1,111 @@
+body {
+    margin:0;
+    background-color: #4682B4;
+}
+#navBar{
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  position: relative;
+  /*overflow: hidden;
+  position: fixed;*/
+
+
+}
+#navBar::before{
+  content: "";
+  background-color: #295D8A;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /*opacity: 0.5;opacity specifies the trasparency of an element, range: 0.0 to 1.0...lower opacity means more transparent*/
+
+}
+
+#navBar ul{
+  display: flex;     /*from this statement, items will get arranges in a straight horizontal line*/
+}
+#navBar ul li{
+  list-style: none;  /*this statement will remove bullet points*/
+  font-size: 1.5rem;
+
+}
+#navBar ul li a{
+  display: block;
+  padding: 10px 50px;    /*this statement will bring space among the list elements*/
+  text-decoration: none; /*removes underline*/
+  border-radius: 30px;
+  color: #FAEBD7;
+}
+
+/*after hovering on item*/
+#navBar ul li a:hover{
+  color: black;
+  background-color: #FAEBD7;
+  text-decoration: underline;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #295D8A;
+    bottom: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+
+    display: block;
+    color:  #42b4d6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: black;
+    text-decoration-color: beige;
+    text-decoration: underline;
+  }
+
+  .active {
+    background-color: #04AA6E;
+  }
+
+
+  h1{
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .video_container{
+    background-color: DarkSlateBlue;
+    padding: 20px;
+    margin: 60px;
+  }
+  h2{
+    color: Beige;
+  }
+  #footer{
+    color: maroon;
+    background-color: Beige;
+    font-size: 18px;
+  }
